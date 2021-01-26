@@ -1,0 +1,1574 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.5">
+    
+    
+      
+        <title>Containers - ARCHER2 User Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.15aa0b43.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.75751829.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/archer2.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#containers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="ARCHER2 User Documentation" class="md-header-nav__button md-logo" aria-label="ARCHER2 User Documentation">
+      
+  <img src="../../images/archer2_white_transparent.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            ARCHER2 User Documentation
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Containers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/ARCHER2-HPC/archer2-docs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ARCHER2-HPC/archer2-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ARCHER2 User Documentation" class="md-nav__button md-logo" aria-label="ARCHER2 User Documentation">
+      
+  <img src="../../images/archer2_white_transparent.png" alt="logo">
+
+    </a>
+    ARCHER2 User Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/ARCHER2-HPC/archer2-docs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ARCHER2-HPC/archer2-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Documentation overview
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+      
+      <label class="md-nav__link" for="nav-2">
+        Quickstart
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Quickstart" data-md-level="1">
+        <label class="md-nav__title" for="nav-2">
+          <span class="md-nav__icon md-icon"></span>
+          Quickstart
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quick-start/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quick-start/quickstart-users/" class="md-nav__link">
+        Quickstart for users
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quick-start/quickstart-developers/" class="md-nav__link">
+        Quickstart for developers
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+      
+      <label class="md-nav__link" for="nav-3">
+        ARCHER > ARCHER2 Migration
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="ARCHER > ARCHER2 Migration" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          ARCHER > ARCHER2 Migration
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archer-migration/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archer-migration/account-migration/" class="md-nav__link">
+        Migrating your account from ARCHER to ARCHER2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archer-migration/data-migration/" class="md-nav__link">
+        Migrating data from ARCHER to ARCHER2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archer-migration/archer2-differences/" class="md-nav__link">
+        Main differences between ARCHER and ARCHER2
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../known-issues/" class="md-nav__link">
+        ARCHER2 Known Issues
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        ARCHER2 Frequently Asked Questions
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+      
+      <label class="md-nav__link" for="nav-6">
+        User and Best Practice Guide
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="User and Best Practice Guide" data-md-level="1">
+        <label class="md-nav__title" for="nav-6">
+          <span class="md-nav__icon md-icon"></span>
+          User and Best Practice Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connecting/" class="md-nav__link">
+        Connecting to ARCHER2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data/" class="md-nav__link">
+        Data management and transfer
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sw-environment/" class="md-nav__link">
+        Software environment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scheduler/" class="md-nav__link">
+        Running jobs on ARCHER2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../io/" class="md-nav__link">
+        I/O and file systems
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dev-environment/" class="md-nav__link">
+        Application development environment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Containers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Containers
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#useful-links" class="md-nav__link">
+    Useful Links
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-singularity-containers-images" class="md-nav__link">
+    About Singularity Containers (Images)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-singularity-images-on-archer2" class="md-nav__link">
+    Using Singularity Images on ARCHER2
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Singularity Images on ARCHER2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-existing-images-onto-archer2" class="md-nav__link">
+    Getting existing images onto ARCHER2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive-use-on-the-login-nodes" class="md-nav__link">
+    Interactive use on the login nodes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive-use-on-the-compute-nodes" class="md-nav__link">
+    Interactive use on the compute nodes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serial-processes-within-a-non-interactive-batch-script" class="md-nav__link">
+    Serial processes within a non-interactive batch script
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-your-own-singularity-images" class="md-nav__link">
+    Creating Your Own Singularity Images
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Your Own Singularity Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-singularity-on-your-local-machine" class="md-nav__link">
+    Installing Singularity on Your Local Machine
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/" class="md-nav__link">
+        Using Python
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analysis/" class="md-nav__link">
+        Data analysis
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../debug/" class="md-nav__link">
+        Debugging
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../profile/" class="md-nav__link">
+        Profiling
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tuning/" class="md-nav__link">
+        Performance tuning
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
+      
+      <label class="md-nav__link" for="nav-7">
+        Research Software
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Research Software" data-md-level="1">
+        <label class="md-nav__title" for="nav-7">
+          <span class="md-nav__icon md-icon"></span>
+          Research Software
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/castep/castep/" class="md-nav__link">
+        CASTEP
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/chemshell/chemshell/" class="md-nav__link">
+        Chemshell
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/code-saturne/code-saturne/" class="md-nav__link">
+        Code_Saturne
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/cp2k/cp2k/" class="md-nav__link">
+        CP2K
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/elk/elk/" class="md-nav__link">
+        ELK
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/fenics/fenics/" class="md-nav__link">
+        FEniCS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/gromacs/gromacs/" class="md-nav__link">
+        GROMACS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/lammps/lammps/" class="md-nav__link">
+        LAMMPS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/mitgcm/mitgcm/" class="md-nav__link">
+        MITgcm
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/mo-unified-model/mo-unified-model/" class="md-nav__link">
+        Met Office Unified Model
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/namd/namd/" class="md-nav__link">
+        NAMD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/nektarplusplus/nektarplusplus/" class="md-nav__link">
+        Nektar++
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/nemo/nemo/" class="md-nav__link">
+        NEMO
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/nwchem/nwchem/" class="md-nav__link">
+        NWChem
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/onetep/onetep/" class="md-nav__link">
+        ONETEP
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/openfoam/openfoam/" class="md-nav__link">
+        OpenFOAM
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/qe/qe/" class="md-nav__link">
+        Quantum Espresso
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/vasp/vasp/" class="md-nav__link">
+        VASP
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
+      
+      <label class="md-nav__link" for="nav-8">
+        Software Libraries
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Software Libraries" data-md-level="1">
+        <label class="md-nav__title" for="nav-8">
+          <span class="md-nav__icon md-icon"></span>
+          Software Libraries
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software-libraries/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software-libraries/libsci/" class="md-nav__link">
+        HPE Cray LibSci: BLAS, LAPACK, ScaLAPACK
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software-libraries/fftw/" class="md-nav__link">
+        FFTW
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software-libraries/hdf5/" class="md-nav__link">
+        HDF5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software-libraries/netcdf/" class="md-nav__link">
+        NetCDF
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software-libraries/adios/" class="md-nav__link">
+        ADIOS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software-libraries/hypre/" class="md-nav__link">
+        HYPRE
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software-libraries/matio/" class="md-nav__link">
+        Matio
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software-libraries/mumps/" class="md-nav__link">
+        MUMPS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software-libraries/petsc/" class="md-nav__link">
+        PETSc
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software-libraries/metis/" class="md-nav__link">
+        Metis/Parmetis
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software-libraries/scotch/" class="md-nav__link">
+        Scotch/PT-Scotch
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software-libraries/superlu/" class="md-nav__link">
+        SuperLU/SuperLU_DIST
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-tools/" class="md-nav__link">
+        Data Analysis and Tools
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../essentials/" class="md-nav__link">
+        Essential Skills
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#useful-links" class="md-nav__link">
+    Useful Links
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-singularity-containers-images" class="md-nav__link">
+    About Singularity Containers (Images)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-singularity-images-on-archer2" class="md-nav__link">
+    Using Singularity Images on ARCHER2
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Singularity Images on ARCHER2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-existing-images-onto-archer2" class="md-nav__link">
+    Getting existing images onto ARCHER2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive-use-on-the-login-nodes" class="md-nav__link">
+    Interactive use on the login nodes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive-use-on-the-compute-nodes" class="md-nav__link">
+    Interactive use on the compute nodes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serial-processes-within-a-non-interactive-batch-script" class="md-nav__link">
+    Serial processes within a non-interactive batch script
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-your-own-singularity-images" class="md-nav__link">
+    Creating Your Own Singularity Images
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Your Own Singularity Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-singularity-on-your-local-machine" class="md-nav__link">
+    Installing Singularity on Your Local Machine
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/ARCHER2-HPC/archer2-docs/edit/main/docs/user-guide/containers.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="containers">Containers</h1>
+<p>This page was originally based on the documentation at the
+<a href="http://docs.hpc.shef.ac.uk/en/latest/sharc/software/apps/singularity.html">University of Sheffield HPC service</a></p>
+<p>Designed around the notion of mobility of compute and reproducible
+science, Singularity enables users to have full control of their
+operating system environment. This means that a non-privileged user can
+"swap out" the Linux operating system and environment on the host for a
+Linux OS and environment that they control. So if the host system is
+running CentOS Linux but your application runs in Ubuntu Linux with a
+particular software stack; you can create an Ubuntu image, install your
+software into that image, copy the image to another host (e.g. ARCHER2),
+and run your application on that host in it’s native Ubuntu environment.</p>
+<p>Singularity also allows you to leverage the resources of whatever host
+you are on. This includes high-speed interconnects (i.e. Slingshot on
+ARCHER2), file systems (i.e. /lustre on ARCHER2) and potentially other
+resources.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Singularity only supports Linux containers. You cannot create
+images that use Windows or macOS (this is a restriction of the
+containerisation model rather than Singularity).</p>
+</div>
+<h2 id="useful-links">Useful Links</h2>
+<ul>
+<li><a href="https://www.sylabs.io/">Singularity website</a></li>
+<li><a href="https://www.sylabs.io/docs/">Singularity documentation</a></li>
+</ul>
+<h2 id="about-singularity-containers-images">About Singularity Containers (Images)</h2>
+<p>Similar to Docker, a Singularity container (or, more commonly, <em>image</em>)
+is a self-contained software stack. As Singularity does not require a
+root-level daemon to run its images (as is required by Docker) it is
+suitable for use on multi-user HPC systems such as ARCHER2. Within the
+container/image, you have exactly the same permissions as you do in a
+standard login session on the system.</p>
+<p>In practice, this means that an image created on your local machine with
+all your research software installed for local development will also run
+on ARCHER2.</p>
+<p>Pre-built images (such as those on <a href="http://hub.docker.com">DockerHub</a> or
+<a href="https://singularity-hub.org/">SingularityHub</a>) can simply be downloaded
+and used on ARCHER2 (or anywhere else Singularity is installed).</p>
+<p>Creating and modifying images requires root permission and so must be
+done on a system where you have such access (in practice, this is
+usually within a virtual machine on your laptop/workstation).</p>
+<h2 id="using-singularity-images-on-archer2">Using Singularity Images on ARCHER2</h2>
+<p>Singularity images can be used on ARCHER2 in a number of ways,
+including:</p>
+<ul>
+<li>Interactively on the login nodes</li>
+<li>Interactively on compute nodes</li>
+<li>As serial processes within a non-interactive batch script</li>
+<li>As parallel processes within a non-interactive batch script</li>
+</ul>
+<p>We provide information on each of these scenarios (apart from the
+parallel use where we are still preparing the documentation) below.
+First, we describe briefly how to get existing images onto ARCHER2 so
+you can use them.</p>
+<h3 id="getting-existing-images-onto-archer2">Getting existing images onto ARCHER2</h3>
+<p>Singularity images are files, so, if you already have an image
+file, you can use <code>scp</code> to copy the file to ARCHER2 as you would with
+any other file.</p>
+<p>If you wish to get a file from one of the container image repositories
+then Singularity allows you to do this from ARCHER2 itself.</p>
+<p>For example, to retrieve an image from SingularityHub on Cirrus we can
+simply issue a Singularity command to pull the image.</p>
+<pre><code>[user@archer2-login0 ~]$ singularity pull hello-world.sif shub://vsoch/hello-world
+</code></pre>
+<p>The image located at the <code>shub</code> URI is written to a Singularity Image
+File (SIF) called <code>hello-world.sif</code>.</p>
+<h3 id="interactive-use-on-the-login-nodes">Interactive use on the login nodes</h3>
+<p>Once you have an image file, using it on the login nodes in an
+interactive way is extremely simple: you use the <code>singularity shell</code>
+command. Using the image we built in the example above:</p>
+<pre><code>[user@archer2-login0 ~]$ singularity shell lolcow.simg
+Singularity: Invoking an interactive shell within container...
+
+Singularity lolcow.simg:~&gt;
+</code></pre>
+<p>Within a Singularity image your home directory will be available. The
+directory with centrally-installed software (<code>/lustre/sw</code>) is also
+available in images by default. !!! note that the <code>module</code> command will not
+work in images unless you have installed the required software and
+configured the environment correctly; we describe how to do this below.</p>
+<p>Once you have finished using your image, you can return to the ARCHER2
+login node command line with the <code>exit</code> command:</p>
+<pre><code>Singularity lolcow.simg:~&gt; exit
+exit
+[user@archer2-login0 ~]$
+</code></pre>
+<h3 id="interactive-use-on-the-compute-nodes">Interactive use on the compute nodes</h3>
+<p>The process for using an image interactively on the compute nodes is
+very similar to that for using them on the login nodes. The only
+difference is that you have to submit an interactive serial job to get
+interactive access to the compute node first.</p>
+<p>For example, to reserve a full node for you to work on interactively you
+would use:</p>
+<pre><code>auser@uan01:/work/t01/t01/auser&gt; srun --nodes=1 --exclusive --time=00:20:00 --account=[] \
+               --partition=standard --qos=standard --pty /bin/bash
+
+...wait until job starts...
+
+auser@nid00001:/work/t01/t01/auser&gt;
+</code></pre>
+<p>Note that the prompt has changed to show you are on a compute node. Now
+you can use the image in the same way as on the login node.</p>
+<pre><code>auser@nid00001:/work/t01/t01/auser&gt; singularity shell lolcow.simg
+Singularity: Invoking an interactive shell within container...
+
+Singularity lolcow.simg:~&gt; exit
+exit
+auser@nid00001:/work/t01/t01/auser&gt; exit
+auser@uan01:/work/t01/t01/auser&gt;
+</code></pre>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We used <code>exit</code> to leave the interactive image shell and then
+<code>exit</code> again to leave the interactive job on the compute node.</p>
+</div>
+<h3 id="serial-processes-within-a-non-interactive-batch-script">Serial processes within a non-interactive batch script</h3>
+<p>You can also use Singularity images within a non-interactive batch
+script as you would any other command. If your image contains a
+<em>runscript</em> then you can use <code>singularity run</code> to execute the runscript
+in the job. You can also use <code>singularity exec</code> to execute arbitrary
+commands (or scripts) within the image.</p>
+<p>An example job submission script to run a serial job that executes the
+runscript within the <code>lolcow.simg</code> image that we built previously on an
+ARCHER2 login node would be as follows.</p>
+<pre><code>#!/bin/bash --login
+
+# Slurm job options (name, compute nodes, job time)
+
+#SBATCH --job-name=simgtest
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=1
+#SBATCH --time=00:10:00
+
+#SBATCH --account=[budget code]
+#SBATCH --partition=standard
+#SBATCH --qos=standard
+
+# Setup the batch environment
+module load epcc-job-env
+
+# Run the serial executable
+singularity run $HOME/lolcow.simg
+</code></pre>
+<p>You submit this in the usual way and the standard output and error
+should be written to <code>slurm-...</code>, where the output filename ends
+with the job number.</p>
+<h2 id="creating-your-own-singularity-images">Creating Your Own Singularity Images</h2>
+<p>As we saw above, you can create Singularity images by importing from
+DockerHub or Singularity Hub on ARCHER2 itself. If you wish to create
+your own custom image then you must install Singularity on a system
+where you have root (or administrator) privileges - often your own
+laptop or workstation.</p>
+<p>We provide links below to instructions on how to install Singularity
+locally and then cover what options you need to include in a Singularity
+recipe file to create images that can run on ARCHER2 and access the
+software development modules. (This can be useful if you want to create
+a custom environment but still want to compile and link against
+libraries that you only have access to on ARCHER2 such as the Intel
+compilers, HPE MPI libraries, etc.)</p>
+<h3 id="installing-singularity-on-your-local-machine">Installing Singularity on Your Local Machine</h3>
+<p>You will need Singularity installed on your machine in order to locally
+run, create and modify images. How you install Singularity on your
+laptop/workstation depends on the operating system you are using.</p>
+<p>If you are using Windows or macOS, the simplest solution is to use
+<a href="http://www.vagrantup.com">Vagrant</a> to give you an easy to use virtual
+environment with Linux and Singularity installed. The Singularity
+website has instructions on how to use this method to install
+Singularity:</p>
+<ul>
+<li><a href="https://www.sylabs.io/guides/2.6/user-guide/installation.html#install-on-mac">Installing Singularity on macOS with
+    Vagrant</a></li>
+<li><a href="https://www.sylabs.io/guides/2.6/user-guide/installation.html#install-on-windows">Installing Singularity on Windows with
+    Vagrant</a></li>
+</ul>
+<p>If you are using Linux then you can usually install Singularity
+directly, see:</p>
+<ul>
+<li><a href="https://www.sylabs.io/guides/2.6/user-guide/installation.html#install-on-linux">Installing Singularity on
+    Linux</a></li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../dev-environment/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Application development environment
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../python/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Using Python
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/ARCHER2-HPC" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/ARCHER2_HPC" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://www.linkedin.com/groups/13848871/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.93c04032.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ['tabs'],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
