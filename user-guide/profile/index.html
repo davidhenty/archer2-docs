@@ -8,8 +8,14 @@
       
       
       
+      
+        <link rel="prev" href="../debug/">
+      
+      
+        <link rel="next" href="../tuning/">
+      
       <link rel="icon" href="../../favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
     
     
       
@@ -17,29 +23,44 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.cd566b2a.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
         
-      
-    
-    
-    
-      
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
       <link rel="stylesheet" href="../../stylesheets/archer2.css">
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
 
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-XVNML97F1T"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-XVNML97F1T",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-XVNML97F1T",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
     
     
   </head>
@@ -50,7 +71,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="teal" data-md-color-primary="" data-md-color-accent="">
   
     
     
@@ -80,7 +101,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -102,7 +123,7 @@
     
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -110,13 +131,13 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
@@ -127,7 +148,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -136,10 +157,10 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/ARCHER2-HPC/archer2-docs/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/ARCHER2-HPC/archer2-docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     ARCHER2-HPC/archer2-docs
@@ -180,10 +201,10 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/ARCHER2-HPC/archer2-docs/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/ARCHER2-HPC/archer2-docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     ARCHER2-HPC/archer2-docs
@@ -219,12 +240,13 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_2">
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
           Quickstart
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -327,12 +349,13 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
-      
-        <label class="md-nav__link" for="__nav_5">
+        <label class="md-nav__link" for="__nav_5" tabindex="0" aria-expanded="true">
           User and Best Practice Guide
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -651,6 +674,53 @@
     Hardware Performance Counters
   </a>
   
+    <nav class="md-nav" aria-label="Hardware Performance Counters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#counters-and-counter-groups-available" class="md-nav__link">
+    Counters and counter groups available
+  </a>
+  
+    <nav class="md-nav" aria-label="Counters and counter groups available">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#powerenergy-counters-available" class="md-nav__link">
+    Power/energy counters available
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enabling-hardware-counter-data-collection" class="md-nav__link">
+    Enabling hardware counter data collection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysing-hardware-counter-data" class="md-nav__link">
+    Analysing hardware counter data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-information-on-hardware-counters" class="md-nav__link">
+    More information on hardware counters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -694,6 +764,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#arm-forge" class="md-nav__link">
+    Arm Forge
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -717,6 +794,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../energy/" class="md-nav__link">
+        Energy use
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -734,12 +825,13 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_6">
+        <label class="md-nav__link" for="__nav_6" tabindex="0" aria-expanded="false">
           Research Software
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -771,7 +863,21 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research-software/castep/castep/" class="md-nav__link">
+      <a href="../../research-software/casino/" class="md-nav__link">
+        CASINO
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/castep/" class="md-nav__link">
         CASTEP
       </a>
     </li>
@@ -785,7 +891,21 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research-software/chemshell/chemshell/" class="md-nav__link">
+      <a href="../../research-software/cesm/" class="md-nav__link">
+        CESM2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/chemshell/" class="md-nav__link">
         Chemshell
       </a>
     </li>
@@ -799,7 +919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research-software/code-saturne/code-saturne/" class="md-nav__link">
+      <a href="../../research-software/code-saturne/" class="md-nav__link">
         Code_Saturne
       </a>
     </li>
@@ -813,7 +933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research-software/cp2k/cp2k/" class="md-nav__link">
+      <a href="../../research-software/cp2k/" class="md-nav__link">
         CP2K
       </a>
     </li>
@@ -827,8 +947,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research-software/elk/elk/" class="md-nav__link">
-        ELK
+      <a href="../../research-software/crystal/" class="md-nav__link">
+        CRYSTAL
       </a>
     </li>
   
@@ -841,8 +961,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research-software/fenics/fenics/" class="md-nav__link">
-        FEniCS
+      <a href="../../research-software/fhi-aims/" class="md-nav__link">
+        FHI-aims
       </a>
     </li>
   
@@ -855,7 +975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research-software/gromacs/gromacs/" class="md-nav__link">
+      <a href="../../research-software/gromacs/" class="md-nav__link">
         GROMACS
       </a>
     </li>
@@ -869,7 +989,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research-software/lammps/lammps/" class="md-nav__link">
+      <a href="../../research-software/lammps/" class="md-nav__link">
         LAMMPS
       </a>
     </li>
@@ -883,7 +1003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research-software/mitgcm/mitgcm/" class="md-nav__link">
+      <a href="../../research-software/mitgcm/" class="md-nav__link">
         MITgcm
       </a>
     </li>
@@ -897,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research-software/mo-unified-model/mo-unified-model/" class="md-nav__link">
+      <a href="../../research-software/mo-unified-model/" class="md-nav__link">
         Met Office Unified Model
       </a>
     </li>
@@ -911,7 +1031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research-software/namd/namd/" class="md-nav__link">
+      <a href="../../research-software/namd/" class="md-nav__link">
         NAMD
       </a>
     </li>
@@ -925,7 +1045,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research-software/nektarplusplus/nektarplusplus/" class="md-nav__link">
+      <a href="../../research-software/nektarplusplus/" class="md-nav__link">
         Nektar++
       </a>
     </li>
@@ -939,7 +1059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research-software/nemo/nemo/" class="md-nav__link">
+      <a href="../../research-software/nemo/" class="md-nav__link">
         NEMO
       </a>
     </li>
@@ -953,7 +1073,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research-software/nwchem/nwchem/" class="md-nav__link">
+      <a href="../../research-software/nwchem/" class="md-nav__link">
         NWChem
       </a>
     </li>
@@ -967,7 +1087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research-software/onetep/onetep/" class="md-nav__link">
+      <a href="../../research-software/onetep/" class="md-nav__link">
         ONETEP
       </a>
     </li>
@@ -981,7 +1101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research-software/openfoam/openfoam/" class="md-nav__link">
+      <a href="../../research-software/openfoam/" class="md-nav__link">
         OpenFOAM
       </a>
     </li>
@@ -995,7 +1115,21 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research-software/qe/qe/" class="md-nav__link">
+      <a href="../../research-software/orca/" class="md-nav__link">
+        ORCA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research-software/qe/" class="md-nav__link">
         Quantum Espresso
       </a>
     </li>
@@ -1009,7 +1143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../research-software/vasp/vasp/" class="md-nav__link">
+      <a href="../../research-software/vasp/" class="md-nav__link">
         VASP
       </a>
     </li>
@@ -1034,12 +1168,13 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_7">
+        <label class="md-nav__link" for="__nav_7" tabindex="0" aria-expanded="false">
           Software Libraries
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -1129,6 +1264,20 @@
     <li class="md-nav__item">
       <a href="../../software-libraries/adios/" class="md-nav__link">
         ADIOS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software-libraries/aocl/" class="md-nav__link">
+        AOCL
       </a>
     </li>
   
@@ -1348,12 +1497,13 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_8">
+        <label class="md-nav__link" for="__nav_8" tabindex="0" aria-expanded="false">
           Data Analysis and Tools
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -1373,6 +1523,34 @@
     <li class="md-nav__item">
       <a href="../../data-tools/" class="md-nav__link">
         Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-tools/arm-forge/" class="md-nav__link">
+        Arm Forge
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-tools/julia/" class="md-nav__link">
+        Julia
       </a>
     </li>
   
@@ -1449,57 +1627,10 @@
   
   
   
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_10">
-          Other Software
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Other Software" data-md-level="1">
-        <label class="md-nav__title" for="__nav_10">
-          <span class="md-nav__icon md-icon"></span>
-          Other Software
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../../other-software/" class="md-nav__link">
-        Overview
+      <a href="../../publish/" class="md-nav__link">
+        ARCHER2 and Publications
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../other-software/crystal/" class="md-nav__link">
-        CRYSTAL
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -1630,6 +1761,53 @@
     Hardware Performance Counters
   </a>
   
+    <nav class="md-nav" aria-label="Hardware Performance Counters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#counters-and-counter-groups-available" class="md-nav__link">
+    Counters and counter groups available
+  </a>
+  
+    <nav class="md-nav" aria-label="Counters and counter groups available">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#powerenergy-counters-available" class="md-nav__link">
+    Power/energy counters available
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enabling-hardware-counter-data-collection" class="md-nav__link">
+    Enabling hardware counter data collection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysing-hardware-counter-data" class="md-nav__link">
+    Analysing hardware counter data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-information-on-hardware-counters" class="md-nav__link">
+    More information on hardware counters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1673,6 +1851,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#arm-forge" class="md-nav__link">
+    Arm Forge
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1681,56 +1866,57 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-<a href="https://github.com/ARCHER2-HPC/archer2-docs/edit/main/docs/user-guide/profile.md" title="Edit this page" class="md-content__button md-icon">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-</a>
+                  
+
+  
+  
+
 
 
 <h1 id="profiling">Profiling</h1>
 <p>There are a number of different ways to access profiling data on 
-ARCHER2. In this section we discuss the HPE Cray profiling tools:
-CrayPAT-lite and CrayPAT, as well as discuss how to get usage data
-on currently running jobs from Slurm itself.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>See <a href="../../known-issues/">current known issues.</a></p>
-</div>
+ARCHER2. In this section, we discuss the HPE Cray profiling tools,
+CrayPat-lite and CrayPat. We also show how to get usage data
+on currently running jobs from Slurm batch system.</p>
+<p>You can also use <a href="../../data-tools/arm-forge/">the Arm Forge tool</a>
+to profile applications on ARCHER2</p>
 <h2 id="craypat-lite">CrayPat-lite</h2>
 <p>CrayPat-lite is a simplified and easy-to-use version of the Cray
-Performance Measurement and Analysis Tool (CrayPat) set. CrayPat-lite
+Performance Measurement and Analysis Tool (CrayPat). CrayPat-lite
 provides basic performance analysis information automatically, with a
 minimum of user interaction, and yet offers information useful to users
 wishing to explore a program's behaviour further using the full CrayPat
-tool set.</p>
+suite.</p>
 <h3 id="how-to-use-craypat-lite">How to use CrayPat-lite</h3>
 <ol>
 <li>
-<p>Ensure the <code>perftools-base</code> module is loaded</p>
-<p><code>auser@ln01:/work/t01/t01/auser&gt; module list</code></p>
+<p>Ensure the <code>perftools-base</code> module is loaded.</p>
+<p><code>module list</code></p>
 </li>
 <li>
-<p>Load the <code>perftools-lite</code> module</p>
-<p><code>auser@ln01:/work/t01/t01/auser&gt; module load perftools-lite</code></p>
+<p>Load the <code>perftools-lite</code> module.</p>
+<p><code>module load perftools-lite</code></p>
 </li>
 <li>
 <p>Compile your application normally. An informational message from
     CrayPat-lite will appear indicating that the executable has been
     instrumented.</p>
-<div class="highlight"><pre><span></span><code>auser@uan01:/work/t01/t01/auser&gt; cc -h std=c99  -o myapplication.x myapplication.c
-INFO: creating the CrayPat-instrumented executable &#39;myapplication.x&#39; (lite-samples) ...OK  
+<div class="highlight"><pre><span></span><code>cc -h std=c99  -o myapplication.x myapplication.c
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>INFO: creating the CrayPat-instrumented executable &#39;myapplication.x&#39; (lite-samples) ...OK  
 </code></pre></div>
 </li>
 <li>
 <p>Run the generated executable normally by submitting a job.</p>
 <div class="highlight"><pre><span></span><code>#!/bin/bash
 
-#SBATCH --job-name=craypat_test
+#SBATCH --job-name=CrayPat_test
 #SBATCH --nodes=4
-#SBATCH --tasks-per-node=128
+#SBATCH --ntasks-per-node=128
 #SBATCH --cpus-per-task=1
 #SBATCH --time=00:20:00
 
@@ -1743,30 +1929,28 @@ srun --hint=nomultithread --distribution=block:block mpi_test.x
 </code></pre></div>
 </li>
 <li>
-<p>Analyse the data</p>
+<p>Analyse the data.</p>
 <p>After the job finishes executing, CrayPat-lite output should be printed
-to stdout (i.e. at the end of the job's output file generated). A new
-directory will also be created in the directory the run occurred in with
-<code>.rpt</code> and <code>.ap2</code> files. The <code>.rpt</code> files are text files that contain
-the same information printed in the job's output file and the <code>.ap2</code> files
-can be used to obtain more detailed information and can also be visualized
-with the Cray Apprentice2 tool (for information on using this, please
-take a look at <a href="#cray-apprentice2">Cray Apprentice2</a>).</p>
+to stdout (i.e. at the end of the job's output file). A new directory will
+also be created containing <code>.rpt</code> and <code>.ap2</code> files. The <code>.rpt</code> files are text
+files that contain the same information printed in the job's output file and
+the <code>.ap2</code> files can be used to obtain more detailed information, which can be
+visualized using the <a href="#cray-apprentice2">Cray Apprentice2 tool</a>.</p>
 </li>
 </ol>
 <h3 id="further-help">Further help</h3>
 <ul>
-<li><a href="https://pubs.cray.com/bundle/Cray_Performance_Measurement_and_Analysis_Tools_Installation_Guide_632_S-2474/page/Use_CrayPat_CrayPat-lite_Apprentice2_or_Reveal.html">CrayPat-lite User Guide</a></li>
+<li><a href="https://support.hpe.com/hpesc/public/docDisplay?docId=a00114942en_us&amp;page=index.html">CrayPat-lite User Guide</a></li>
 </ul>
 <h2 id="craypat">CrayPat</h2>
-<p>The Cray Performance Analysis Tool (CrayPAT) is a powerful framework for
+<p>The Cray Performance Analysis Tool (CrayPat) is a powerful framework for
 analysing a parallel application’s performance on Cray supercomputers.
 It can provide very detailed information about the timing and performance
 of individual application procedures.</p>
-<p>CrayPat can perform two types of performance analysis: <em>sampling</em>
+<p>CrayPat can perform two types of performance analysis, <em>sampling</em>
 experiments and <em>tracing</em> experiments. A sampling experiment probes the
-code at a predefined interval and produces a report based on these
-statistics. A tracing experiment explicitly monitors the code
+code at a predefined interval and produces a report based on the data
+collected. A tracing experiment explicitly monitors the code
 performance within named routines. Typically, the overhead associated
 with a tracing experiment is higher than that associated with a sampling
 experiment but provides much more detailed information. The key to
@@ -1775,18 +1959,18 @@ profiling for a representative length of time.</p>
 <h3 id="sampling-analysis">Sampling analysis</h3>
 <ol>
 <li>
-<p>Ensure the <code>perftools-base</code> module is loaded</p>
+<p>Ensure the <code>perftools-base</code> module is loaded.</p>
 <p><code>module list</code></p>
 </li>
 <li>
-<p>Load <code>perftools</code> module</p>
+<p>Load <code>perftools</code> module.</p>
 <p><code>module load perftools</code></p>
 </li>
 <li>
 <p>Compile your code in the standard way always using the Cray compiler
     wrappers (ftn, cc and CC). Object files need to be made available to
     CrayPat to correctly build an instrumented executable for profiling
-    or tracing, this means that compile and link stage should be
+    or tracing, this means that the compile and link stage should be
     separated by using the <code>-c</code> compile flag.</p>
 <div class="highlight"><pre><span></span><code>auser@ln01:/work/t01/t01/auser&gt; cc -h std=c99 -c jacobi.c
 auser@ln01:/work/t01/t01/auser&gt; cc jacobi.o -o jacobi
@@ -1794,24 +1978,24 @@ auser@ln01:/work/t01/t01/auser&gt; cc jacobi.o -o jacobi
 </li>
 <li>
 <p>To instrument the binary, run the <code>pat_build</code> command. This will 
-    generate a new binary with <code>+pat</code> appended to the end (e.g. <code>jacobi+pat</code>)</p>
+    generate a new binary with <code>+pat</code> appended to the end (e.g. <code>jacobi+pat</code>).</p>
 <p><code>auser@ln:/work/t01/t01/auser&gt; pat_build jacobi</code></p>
 </li>
 <li>
 <p>Run the new executable with <code>+pat</code> appended as you would with the
     regular executable. Each run will produce its own 'experiment
-    directory' directory containing the performance data as <code>.xf</code> files
+    directory' containing the performance data as <code>.xf</code> files
     inside a subdirectory called <code>xf-files</code> (e.g. running the 
     <code>jacobi+pat</code> instrumented executable might produce
     <code>jacobi+pat+12265-1573s/xf-files</code>).</p>
 </li>
 <li>Generate report data with <code>pat_report</code>.</li>
 </ol>
-<p>These <code>.xf</code> files contain the raw sampling data from the run and need to
+<p>The <code>.xf</code> files contain the raw sampling data from the run and need to
 be post-processed to produce useful results. This is done using the
 <code>pat_report</code> tool which converts all the raw data into a summarised and
 readable form. You should provide the name of the experiment directory as
-the argument:</p>
+the argument to <code>pat_report</code>.</p>
 <pre><code>auser@ln:/work/t01/t01/auser&gt; pat_report jacobi+pat+12265-1573s
 
 Table 1:  Profile by Function (limited entries shown)
@@ -1837,18 +2021,16 @@ Samp% |  Samp |  Imb. |  Imb. | Group
 |==================================================
 </code></pre>
 <p>This report will generate more files with the extension <code>.ap2</code> in the
-experiment directory. These hold the same data as the <code>.xf</code> file but
+experiment directory. These hold the same data as the <code>.xf</code> files but
 in the post-processed form. Another file produced has an <code>.apa</code> extension
 and is a text file with a suggested configuration for generating a
 traced experiment. </p>
 <p>The <code>.ap2</code> files generated are used to view performance
-data graphically with the Cray Apprentice2 tool (for information on using
-this, please take a look at <a href="#cray-apprentice2">Cray Apprentice2</a>), and
-the latter is used for more detailed tracing experiments.</p>
+data graphically with the <a href="#cray-apprentice2">Cray Apprentice2 tool</a>.</p>
 <p>The <code>pat_report</code> command is able to produce many different profile
 reports from the profiling data. You can select a predefined report with
 the <code>-O</code> flag to <code>pat_report</code>. A selection of the most generally useful
-predefined report types are:</p>
+predefined report types are:= listed below.</p>
 <ul>
 <li><strong>ca+src</strong> - Show the callers (bottom-up view) leading to the
     routines that have a high use in the report and include source code
@@ -1939,9 +2121,9 @@ requirements.</p>
 <p>The entire program can be traced as a whole using <code>-w</code>:</p>
 <pre><code>auser@ln01:/work/t01/t01/auser&gt; pat_build -w jacobi
 </code></pre>
-<p>Using <code>-g</code> a program can be instrumented to trace all function entry
-point references belonging to the trace function group tracegroup (mpi,
-libsci, lapack, scalapack, heap, etc):</p>
+<p>Using <code>-g</code>, a program can be instrumented to trace all function entry
+point references belonging to the trace function group (mpi, libsci,
+lapack, scalapack, heap, etc):</p>
 <pre><code>auser@ln01:/work/t01/t01/auser&gt; pat_build -w -g mpi jacobi
 </code></pre>
 <h3 id="dynamically-linked-binaries">Dynamically-linked binaries</h3>
@@ -1950,13 +2132,12 @@ binaries with the <code>pat_run</code> utility. <code>pat_run</code> delivers pr
 information for codes that cannot easily be rebuilt. To use <code>pat_run</code>:</p>
 <ol>
 <li>
-<p>Load the <code>perftools-base</code> module if it is not already loaded</p>
+<p>Load the <code>perftools-base</code> module if it is not already loaded.</p>
 <p><code>module load perftools-base</code></p>
 </li>
 <li>
 <p>Run your application normally including the <code>pat_run</code> command right
-    after your <code>srun</code>
-    options</p>
+    after your <code>srun</code> options.</p>
 <p><code>srun [srun-options] pat_run [pat_run-options] program [program-options]</code></p>
 </li>
 <li>
@@ -1965,7 +2146,7 @@ information for codes that cannot easily be rebuilt. To use <code>pat_run</code>
 <p><code>auser@ln01:/work/t01/t01/auser&gt; pat_report jacobi+pat+12265-1573s</code></p>
 </li>
 </ol>
-<p>Some useful <code>pat_run</code> options are:</p>
+<p>Some useful <code>pat_run</code> options are as follows.</p>
 <ul>
 <li><code>-w</code>  Collect data by tracing.</li>
 <li><code>-g</code>  Trace functions belonging to group names. See the -g option in
@@ -1974,15 +2155,14 @@ information for codes that cannot easily be rebuilt. To use <code>pat_run</code>
 </ul>
 <h3 id="further-help_1">Further help</h3>
 <ul>
-<li><a href="https://pubs.cray.com/content/S-2376/7.0.0/cray-performance-measurement-and-analysis-tools-user-guide/craypat">CrayPat User Guide</a></li>
+<li><a href="https://support.hpe.com/hpesc/public/docDisplay?docId=a00114942en_us&amp;page=index.html">CrayPat User Guide</a></li>
 </ul>
 <h2 id="cray-apprentice2">Cray Apprentice2</h2>
 <p>Cray Apprentice2 is an optional GUI tool that is used to visualize and
 manipulate the performance analysis data captured during program
-execution. Cray Apprentice2 can
-display a wide variety of reports and graphs, depending on the type of
-program being analyzed, the way in which the program was instrumented
-for data capture, and the data that was collected during program
+execution. Cray Apprentice2 can display a wide variety of reports and graphs,
+depending on the type of program being analyzed, the way in which the program
+was instrumented for data capture, and the data that was collected during program
 execution.</p>
 <p>You will need to use CrayPat to first instrument your program and
 capture performance analysis data, and then <code>pat_report</code> to generate
@@ -1999,18 +2179,85 @@ analyzing the resulting data in Cray Apprentice2.</p>
 <pre><code>export PAT_RT_SUMMARY=0
 </code></pre>
 <p>To use Cray Apprentice2 (<code>app2</code>), load <code>perftools-base</code> module if it is
-not already loaded</p>
+not already loaded.</p>
 <pre><code>module load perftools-base
 </code></pre>
-<p>then open the experiment directory generated during the instrumentation
-phase with Apprentice2:</p>
+<p>Next, open the experiment directory generated during the instrumentation
+phase with Apprentice2.</p>
 <pre><code>auser@ln01:/work/t01/t01/auser&gt; app2 jacobi+pat+12265-1573s
 </code></pre>
 <h2 id="hardware-performance-counters">Hardware Performance Counters</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Information on hardware counters will be added soon.</p>
+<p>A limited number of hardware performance counters are currently available
+on the ARCHER2 compute nodes. We are working to make more available.</p>
 </div>
+<p>Hardware performance counters can be used to monitor CPU and power events on
+ARCHER2 compute nodes. The monitoring and reporting of hardware counter events is 
+integrated with <em>CrayPat</em> - users should use CrayPat as described earlier in this
+section to run profiling experiments to gather data from hardware counter events
+and to analyse the data.</p>
+<h3 id="counters-and-counter-groups-available">Counters and counter groups available</h3>
+<p>You can explore which event counters are available on compute nodes by running the following
+commands (replace <code>t01</code> with a valid budget code for your account):</p>
+<div class="highlight"><pre><span></span><code>module<span class="w"> </span>load<span class="w"> </span>perftools
+srun<span class="w"> </span>--ntasks<span class="o">=</span><span class="m">1</span><span class="w"> </span>--partition<span class="o">=</span>standard<span class="w"> </span>--qos<span class="o">=</span>short<span class="w"> </span>--account<span class="o">=</span>t01<span class="w"> </span>papi_avail
+</code></pre></div>
+<p>For convenience, the CrayPat tool provides predetermined groups of hardware event
+counters. You can get more information on the hardware event counters available
+through CrayPat with the following commands (on a login or compute node):</p>
+<div class="highlight"><pre><span></span><code>module<span class="w"> </span>load<span class="w"> </span>perftools
+pat_help<span class="w"> </span>counters<span class="w"> </span>rome<span class="w"> </span>groups
+</code></pre></div>
+<p>If you want information on which hardware event counters are included in a group
+you can type the group name at the prompt you get after running the command above.
+Once you have finished browsing the help, type <code>.</code> to quit back to the command line.</p>
+<h4 id="powerenergy-counters-available">Power/energy counters available</h4>
+<p>You can also access counters on power/energy consumption. To list the counters available
+to monitor power/energy use you can use the command (replace <code>t01</code> with a valid budget
+code for your account):</p>
+<div class="highlight"><pre><span></span><code>module<span class="w"> </span>load<span class="w"> </span>perftools
+srun<span class="w"> </span>--ntasks<span class="o">=</span><span class="m">1</span><span class="w"> </span>--partition<span class="o">=</span>standard<span class="w"> </span>--qos<span class="o">=</span>short<span class="w"> </span>--account<span class="o">=</span>t01<span class="w"> </span>papi_native_avail<span class="w"> </span>-i<span class="w"> </span>cray_pm
+</code></pre></div>
+<h3 id="enabling-hardware-counter-data-collection">Enabling hardware counter data collection</h3>
+<p>You enable the collection of hardware event counter data as part of a CrayPat 
+experiment by setting the environment variable <code>PAT_RT_PERFCTR</code> to a comma separated
+list of the groups/counters that you wish to measure.</p>
+<p>For example, you could set (usually in your job submission script):</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PAT_RT_PERFCTR</span><span class="o">=</span><span class="m">1</span>
+</code></pre></div>
+<p>to use the <code>1</code> counter group (summary with branch activity).</p>
+<h3 id="analysing-hardware-counter-data">Analysing hardware counter data</h3>
+<p>If you enabled collection of hardware event counters when running your profiling
+experiment, you will automatically get a report on the data when you use the 
+<code>pat_report</code> command to analyse the profile experiment data file.</p>
+<p>You will see information similar to the following in the output from CrayPat for
+different sections of your code (this example if for the case where 
+<code>export PAT_RT_PERFCTR=1</code>, counter group: summary with branch activity, was 
+set in the job submission script):</p>
+<div class="highlight"><pre><span></span><code>==============================================================================
+  USER / main
+------------------------------------------------------------------------------
+  Time%                                                   88.3% 
+  Time                                               446.113787 secs
+  Imb. Time                                           33.094417 secs
+  Imb. Time%                                               6.9% 
+  Calls                       0.002 /sec                    1.0 calls
+  PAPI_BR_TKN                 0.240G/sec    106,855,535,005.863 branch
+  PAPI_TOT_INS                5.679G/sec  2,533,386,435,314.367 instr
+  PAPI_BR_INS                 0.509G/sec    227,125,246,394.008 branch
+  PAPI_TOT_CYC                            1,243,344,265,012.828 cycles
+  Instr per cycle                                          2.04 inst/cycle
+  MIPS                 1,453,770.20M/sec                        
+  Average Time per Call                              446.113787 secs
+  CrayPat Overhead : Time      0.2%           
+</code></pre></div>
+<h3 id="more-information-on-hardware-counters">More information on hardware counters</h3>
+<p>More information on using hardware counters can be found in the appropriate section
+of the HPE documentation:</p>
+<ul>
+<li><a href="https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&amp;docId=a00123563en_us">HPE Performance Analysis Tools User Guide</a></li>
+</ul>
 <h2 id="performance-and-profiling-data-in-slurm">Performance and profiling data in Slurm</h2>
 <p>Slurm commands on the login nodes can be used to quickly and simply retrieve
 information about memory usage for currently running and completed jobs.</p>
@@ -2028,16 +2275,22 @@ information on running jobs:</p>
   Durham.)</li>
 </ul>
 <p>We provide examples of the use of these three commands below.</p>
+<p>For the <code>sacct</code> and <code>sstat</code> command, the memory properties we print out below are:</p>
+<ul>
+<li><code>AveRSS</code> - The mean memory use per node over the length of the job</li>
+<li><code>MaxRSS</code> - The maximum memory use per node measured during the job</li>
+<li><code>MaxRSSTask</code> - The maximum memory use from any process in the job</li>
+</ul>
 <h3 id="example-1-sstat-for-running-jobs">Example 1: <code>sstat</code> for running jobs</h3>
 <p>To display the current memory use of a running job with the ID 123456:</p>
-<div class="highlight"><pre><span></span><code>auser@ln01:/work/t01/t01/auser&gt; sstat --format=JobID,AveCPU,AveRSS,MaxRSS,MaxRSSTask,AveVMSize,MaxVMSize -j 123456
+<div class="highlight"><pre><span></span><code>sstat --format=JobID,AveCPU,AveRSS,MaxRSS,MaxRSSTask -j 123456
 </code></pre></div>
 <h3 id="example-2-sacct-for-finished-jobs">Example 2: <code>sacct</code> for finished jobs</h3>
 <p>To display the memory use of a completed job with the ID 123456:</p>
-<div class="highlight"><pre><span></span><code>auser@ln01:/work/t01/t01/auser&gt; sacct --format=JobID,JobName,AveRSS,MaxRSS,MaxRSSTask,AveVMSize,MaxVMSize -j 123456
+<div class="highlight"><pre><span></span><code>sacct --format=JobID,JobName,AveRSS,MaxRSS,MaxRSSTask -j 123456
 </code></pre></div>
 <p>Another usage of <code>sacct</code> is to display when a job was submitted, started running and ended for a particular user:</p>
-<div class="highlight"><pre><span></span><code>auser@ln01:/work/t01/t01/auser&gt; sacct --format=JobID,Submit,Start,End -u auser
+<div class="highlight"><pre><span></span><code>sacct --format=JobID,Submit,Start,End -u auser
 </code></pre></div>
 <h3 id="example-3-archer2jobload-for-running-jobs">Example 3: <code>archer2jobload</code> for running jobs</h3>
 <p>Using the <code>archer2jobload</code> command on its own with no options will show the current
@@ -2066,50 +2319,28 @@ nid001922           127.35              256000              239872              
 </code></pre></div>
 <h3 id="further-help-with-slurm">Further help with Slurm</h3>
 <p>The definitions of any variables discussed here and more usage information can be found in the man pages of <code>sstat</code> and <code>sacct</code>.</p>
+<h2 id="arm-forge">Arm Forge</h2>
+<p>The Arm Forge tool also provides profiling capabilities. See:</p>
+<ul>
+<li><a href="../../data-tools/arm-forge/">ARCHER2 Arm Forge documentation</a></li>
+</ul>
 
-              
-            </article>
-          </div>
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../debug/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Debugging" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Debugging
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../tuning/" class="md-footer__link md-footer__link--next" aria-label="Next: Performance tuning" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Performance tuning
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -2131,7 +2362,7 @@ nid001922           127.35              256000              239872              
       
     
     <a href="https://github.com/ARCHER2-HPC" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
     </a>
   
     
@@ -2140,7 +2371,7 @@ nid001922           127.35              256000              239872              
       
     
     <a href="https://twitter.com/ARCHER2_HPC" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
     </a>
   
     
@@ -2149,7 +2380,7 @@ nid001922           127.35              256000              239872              
       
     
     <a href="https://www.linkedin.com/groups/13848871/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
     </a>
   
 </div>
@@ -2162,10 +2393,11 @@ nid001922           127.35              256000              239872              
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.01de222e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
       
     
   </body>
