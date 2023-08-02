@@ -15,7 +15,7 @@
         <link rel="next" href="../sw-environment/">
       
       <link rel="icon" href="../../favicon.ico">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
@@ -23,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ded33207.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.eebd395e.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -71,7 +71,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="teal" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
   
     
     
@@ -660,6 +660,13 @@
           <li class="md-nav__item">
   <a href="#sharing-data-with-archer2-users-in-your-project" class="md-nav__link">
     Sharing data with ARCHER2 users in your project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sharing-data-with-archer2-users-within-the-same-project-group" class="md-nav__link">
+    Sharing data with  ARCHER2 users within the same project group
   </a>
   
 </li>
@@ -1521,6 +1528,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../software-libraries/mesa/" class="md-nav__link">
+        MESA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../software-libraries/mumps/" class="md-nav__link">
         MUMPS
       </a>
@@ -1954,6 +1975,13 @@
           <li class="md-nav__item">
   <a href="#sharing-data-with-archer2-users-in-your-project" class="md-nav__link">
     Sharing data with ARCHER2 users in your project
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sharing-data-with-archer2-users-within-the-same-project-group" class="md-nav__link">
+    Sharing data with  ARCHER2 users within the same project group
   </a>
   
 </li>
@@ -2431,6 +2459,19 @@ folders that can be used for sharing data.</p>
 place any data you wish to share with other project members in this
 directory. For example, if your project code is x01 the inner shared
 folder would be located at <code>/work/x01/x01/shared</code>.</p>
+<h3 id="sharing-data-with-archer2-users-within-the-same-project-group">Sharing data with  ARCHER2 users within the same project group</h3>
+<p>Some projects have <a href="#subprojects">subprojects</a> (also often referred to as a 'project groups' or sub-budgets)   e.g. project e123 might have a project group e123-fred  for a sub-group of researchers working with Fred.</p>
+<p>Often project groups do not have a disk quota set, but if the project PI <a href="https://epcced.github.io/safe-docs/safe-for-managers/#how-can-i-create-a-quota-for-a-project-group-or-move-space-between-quotas">does set up a group disk quota</a> e.g. for /work then additional directories are created:</p>
+<pre><code>/work/e123/e123-fred
+/work/e123/e123-fred/shared
+/work/e123/e123-fred/&lt;user&gt; (for every user in the group)
+</code></pre>
+<p>and all members of the <code>/work/e123/e123-fred</code> group will be able to use the <code>/work/e123/e123-fred/shared</code> directory to share their files.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If files are copied from their usual directories they will keep the original ownership. To grant ownership to the group:</p>
+<p><code>chown -R $USER:e123-fred /work/e123/e123-fred/ ...</code></p>
+</div>
 <h3 id="sharing-data-with-all-archer2-users">Sharing data with all ARCHER2 users</h3>
 <p>Each project also has an <em>outer</em> shared folder.:</p>
 <pre><code>/work/[project code]/shared
@@ -2464,7 +2505,7 @@ the subdirectories below <code>my-shared-folder</code>.</p>
 <p>Every file has an <em>owner</em> group that specifies access permissions for users
 belonging to that group. It's usually the case that the group id is synonymous
 with the project code. Somewhat confusingly however, projects can contain
-groups of their own, called subprojects, which can be assigned disk space
+groups of their own, called <a href="#sharing-data-with-archer2-users-within-the-same-project-group">subprojects</a>, which can be assigned disk space
 quotas distinct from the project.</p>
 <pre><code>chown -R $USER:x01-subproject /work/x01/x01-subproject/$USER/my-folder
 </code></pre>
@@ -2710,10 +2751,12 @@ as the Globus Grid Community Toolkit v6.2.20201212. This toolkit provides
 a command line interface for moving data to and from GridFTP servers. </p>
 <p>Data transfers are managed by the <code>globus-url-copy</code> command. Full details
 concerning this command's use can be found in the <a href="https://gridcf.org/gct-docs/6.2/gridftp/user/index.html">GCT 6.2 GridFTP User's Guide</a>.</p>
-<p>Please note, the GCT module does <em>not</em> yet support parallel streams.
-We anticipate having this feature available soon. Please consult the
-module help (<code>module help gct/6.2</code>) for confirmation of when this work
-has been completed.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Further information on using GridFTP on ARCHER2 to transfer
+data to the <a href="https://www.jasmin.ac.uk">JASMIN facility</a> can be found
+in <a href="https://help.jasmin.ac.uk/article/4997-transfers-from-archer2">the JASMIN user documentation</a>.</p>
+</div>
 <h2 id="ssh-data-transfer-example-laptopworkstation-to-archer2">SSH data transfer example: laptop/workstation to ARCHER2</h2>
 <p>Here we have a short example demonstrating transfer of data directly
 from a laptop/workstation to ARCHER2.</p>
@@ -2839,10 +2882,10 @@ transfer, we could instead use the <code>scp</code> command,</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.51198bba.min.js"></script>
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
     
   </body>
